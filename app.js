@@ -140,41 +140,97 @@ ___________________________ Answer ______________________________ */
 // console.log(get2);
 // get2.forEach(function(element){element.style.color = 'blue'})
 /* ________________________ Question no 10 _______________________
-
+createelement, createtextnode etc
 ___________________________ Answer ______________________________ */
-
+// let heading = document.createElement('h2');
+// let headingText = document.createTextNode('I am Learning');
+// heading.appendChild(headingText);
+// document.body.appendChild(heading);
 /* ________________________ Question no 11 _______________________
-
+.focus() and input.value = ''
 ___________________________ Answer ______________________________ */
-
+// function check(){let get  = document.getElementById('userinput').value;
+//                 document.getElementById('userinput').value = '';
+//                 document.getElementById('userinput').focus();
+// console.log(get)}
 /* ________________________ Question no 12 _______________________
-
+.repeat()
 ___________________________ Answer ______________________________ */
-
+// console.log('8'.repeat(9))
 /* ________________________ Question no 13 _______________________
-
+.repeat()
 ___________________________ Answer ______________________________ */
+// function repeating(){let getWord = document.getElementById('word').value; 
+
+//    let repeatNumber = document.getElementById('number').value; 
+
+//    let requirement = (getWord + ' ').repeat(repeatNumber);
+
+//    document.getElementById('pp').innerHTML = requirement;}
 
 /* ________________________ Question no 14 _______________________
-
+repeat method
 ___________________________ Answer ______________________________ */
-
+// function repeating(){let getWord = document.getElementById('word').value;
+//     let number = document.getElementById('number').value;
+//           number = Number(number)
+//     let need = (getWord + ' ').repeat(number);
+//     let getDisplay = document.getElementById('display');
+//     getDisplay.innerHTML = need;
+// }
 /* ________________________ Question no 15 _______________________
-
+mask account no
 ___________________________ Answer ______________________________ */
-
+//  let ac = '38301-35677888-349';
+//  console.log(ac);
+//  let onePart = ac.slice(0,6);
+//  console.log(onePart);
+//  let centerPart = ac.slice(6,14);
+//  console.log(centerPart);
+//  let last = ac.slice(14);
+//  console.log(last);
+//  let need = '*'.repeat(7);
+//  console.log(need);
+//  let requirement = onePart + need + last;
+//  console.log(requirement)
 /* ________________________ Question no 16 _______________________
-
+object
 ___________________________ Answer ______________________________ */
-
+// const student = {name  : 'Aziz',
+//     age : 23,
+//     course : 'web',
+//     city :'karachi'
+// }
+// console.log(student);
+// let check = student.hasOwnProperty('name');
+// console.log(check);
+// student.age = 45;
+// console.log(student);
+// delete student.course;
+// console.log(student);
+// student.district = 'Kohat';
+// console.log(student)
 /* ________________________ Question no 17 _______________________
-
+anonymous function
 ___________________________ Answer ______________________________ */
-
+// let greet = function(name){console.log(`Hello ${name}`)}
+// greet('Aziz');
 /* ________________________ Question no 18 _______________________
-
+localStorage
 ___________________________ Answer ______________________________ */
+const student = {name : 'Aziz',
+    age : 30,
+    course : 'web',
+    campus : 'main'
+}
+console.log(student,typeof student);
+let converString = JSON.stringify(student);
+console.log(converString,typeof converString);
+localStorage.setItem('task',converString);
 
+let get = localStorage.getItem('task');
+   get = JSON.parse(get);
+console.log(get)
 /* ________________________ Question no 19 _______________________
 
 ___________________________ Answer ______________________________ */
