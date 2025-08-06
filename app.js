@@ -218,87 +218,217 @@ ___________________________ Answer ______________________________ */
 /* ________________________ Question no 18 _______________________
 localStorage
 ___________________________ Answer ______________________________ */
-const student = {name : 'Aziz',
-    age : 30,
-    course : 'web',
-    campus : 'main'
-}
-console.log(student,typeof student);
-let converString = JSON.stringify(student);
-console.log(converString,typeof converString);
-localStorage.setItem('task',converString);
+// const student = {name : 'Aziz',
+//     age : 30,
+//     course : 'web',
+//     campus : 'main'
+// }
+// console.log(student,typeof student);
+// let converString = JSON.stringify(student);
+// console.log(converString,typeof converString);
+// localStorage.setItem('task',converString);
 
-let get = localStorage.getItem('task');
-   get = JSON.parse(get);
-console.log(get)
+// let get = localStorage.getItem('task');
+//    get = JSON.parse(get);
+// console.log(get)
 /* ________________________ Question no 19 _______________________
+Save and Retrieve a Name
+Create a simple HTML page with:
 
+One input field to enter your name
+
+A button to save the name to Local Storage
+
+A button to show the saved name on the page
 ___________________________ Answer ______________________________ */
-
+// function saving(){let getName = document.getElementById('userinput').value;
+//     console.log(getName,typeof getName);
+//     getName = JSON.stringify(getName);
+//     localStorage.setItem('task',getName);
+//     let getFrom = localStorage.getItem('task');
+//     getFrom = JSON.parse(getFrom);
+//     document.getElementById('display').innerHTML = getFrom
+    
+// }
 /* ________________________ Question no 20 _______________________
-
+local storage counter
 ___________________________ Answer ______________________________ */
-
+// first we see our local storage if data is available or not
+// let get = localStorage.getItem('data');
+// if(get){get = Number(get)}
+// else{get = 0}
+// // data show on dom if available
+// let show = document.getElementById('display');
+//    show.value = get;
+// //    create update data function and store data in local storage by this function 
+// function update(){show.value = get;
+//     localStorage.setItem('data',get)
+// }
+// // increment 
+// function incrementing(){get++;
+//     update();
+// }
+// // decremetn 
+// function decrementing(){if(get>0){get --;}
+// else{get  = 0}
+// update();}
+// // reset 
+// function reseting(){get = 0;
+//     update();
+// }
 /* ________________________ Question no 21 _______________________
-
+reverse string 
 ___________________________ Answer ______________________________ */
-
+// let str = 'java';
+// let reversed = '';
+// for(let i = str.length -1;i>=0; i--){reversed = reversed + str[i]}
+// console.log(reversed)
+// let array = ['a','b','c'];
+// let rev = array.reverse();
+// console.log(rev);
+// let num = [1,2,3,4];
+// let rv = num.reverse();
+// console.log(rv)
 /* ________________________ Question no 22 _______________________
-
+leap year
 ___________________________ Answer ______________________________ */
-
+// let year = 2000;
+// if((year % 4 === '0' && year % 100 !== '0')||(year % 400 === 0)){console.log('leap year')}
+// else{console.log('not leap year')}
 /* ________________________ Question no 23 _______________________
-
+merge obj by spread operator
 ___________________________ Answer ______________________________ */
+// const student = {name : 'Aziz',
+//     age : 30
+// }
+// const detail = {campus : 'main',
+//     city : 'karachi'
+// }
+// const record = {...student,...detail};
+// console.log(record)
 
 /* ________________________ Question no 24 _______________________
-
+obj length
 ___________________________ Answer ______________________________ */
-
+// const student = {name : 'Aziz',
+//     course : 'web',
+//     city : 'karachi'
+// }
+// let len = Object.keys(student).length;
+// console.log(len)
 /* ________________________ Question no 25 _______________________
-
+ get the data of obj by for loop
 ___________________________ Answer ______________________________ */
-
+// const student = {name : 'Aziz',
+//     course : 'web',
+//     city : 'karachi'
+// }
+// for(let key in student){console.log(`${key} : ${student[key]}`)}
 /* ________________________ Question no 26 _______________________
-
+itrators for of/in
 ___________________________ Answer ______________________________ */
-
+// let fruit = ['apple','mango','banan'];
+// for(let key of fruit){console.log(key)};
+// let vegetables = ['carrot','onion','potato'];
+// for(let key in vegetables){console.log(key)}
 /* ________________________ Question no 27 _______________________
-
+array destructuring
 ___________________________ Answer ______________________________ */
-
+// let [name, age, course] = ['Aziz',20,'web development'];
+// console.log(name);
+// console.log(course);
 /* ________________________ Question no 28 _______________________
-
+obj destructuring
 ___________________________ Answer ______________________________ */
+// const student = {name : 'Aziz',
+//     age : 23,
+//     course : 'web'
+// }
+// console.log(student.age);
+// const {name,age,course} = student;
+// console.log(name);
+// console.log(course)
 
 /* ________________________ Question no 29 _______________________
-
+enhanced object literals 
 ___________________________ Answer ______________________________ */
-
+// let name = 'Aziz';
+// let age = 30;
+// let course  = 'web'
+// const details = {name ,
+//     age ,
+//     course
+// }
+// console.log(details)
 /* ________________________ Question no 30 _______________________
-
+largest number 
 ___________________________ Answer ______________________________ */
-
+// let array =  [12, 5, 20,88, 8, 17];
+// // let lar = Math.max(...array);
+// // console.log(lar)
+// // by for loop
+// let large = 0;
+// for(let key of array){if(key > large){large = key}
+// }
+// console.log(large)
 /* ________________________ Question no 31 _______________________
 
+find smallest number of array
 ___________________________ Answer ______________________________ */
-
+// let array = [3,2,454,8,-1];
+// // let smallest = Math.min(...array);
+// // console.log(smallest)
+// let smallest = 0;
+// for(let key of array){if(key < smallest){smallest = key;}}
+// console.log(smallest)
 /* ________________________ Question no 32 _______________________
-
+check palindrom
 ___________________________ Answer ______________________________ */
-
+// let word = 'mahamt';
+// let check = '';
+// for(let i = word.length-1; i>=0;i--){check = check + word[i]};
+// console.log(check);
+// if(word === check){console.log(`${word} is palindrome`)}
+// else{console.log(`${word} is not palindrome`)}
 /* ________________________ Question no 33 _______________________
-
+ remove duplicate from an array 
+ [1, 2, 2, 3, 4, 4, 5]
 ___________________________ Answer ______________________________ */
-
+// let array = [1, 2, 27, 3, 4, 4, 27];
+// let uniqueArray = array.filter((element,index)=>{return array.indexOf(element) === index})
+// console.log(uniqueArray)
 /* ________________________ Question no 34 _______________________
 
 ___________________________ Answer ______________________________ */
-
+// let array = [1, 2, 2, 3, 4, 4, 5];
+// let uniqueArray = [];
+// let k = 0; // index for uniqueArray
+// for (let i = 0; i < array.length; i++) {
+//     let isDuplicate = false;
+//     // manually check in uniqueArray
+//     for (let j = 0; j < k; j++) {
+//         if (array[i] === uniqueArray[j]) {
+//             isDuplicate = true;
+//             break;
+//         }
+//     }
+//     if (!isDuplicate) {
+//         uniqueArray[k] = array[i]; // manually push
+//         k++;
+//     }
+// }
+// console.log(uniqueArray);
+// Output: [1, 2, 3, 4, 5]
 /* ________________________ Question no 35 _______________________
-
+remove duplicate by for loop
 ___________________________ Answer ______________________________ */
-
+// let array = [1, 2, 2, 3, 4, 4, 5];
+// let uniqueArray = [];
+// let check = {};
+// for(let i = 0; i <array.length; i++){if(!check[array[i]]){check[array[i]] = true;
+//     uniqueArray.push(array[i])
+// }}
+// console.log(uniqueArray)
 /* ________________________ Question no 36 _______________________
 
 ___________________________ Answer ______________________________ */
