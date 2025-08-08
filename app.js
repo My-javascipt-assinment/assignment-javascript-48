@@ -430,61 +430,187 @@ ___________________________ Answer ______________________________ */
 // }}
 // console.log(uniqueArray)
 /* ________________________ Question no 36 _______________________
-
+filter()
 ___________________________ Answer ______________________________ */
-
+// let frutis = ['mango','grapes','guava','orange','mango','bnanaa','mango'];
+// let need = frutis.filter((elements,indexs)=>{return elements === 'mango'})
+// console.log(need)
 /* ________________________ Question no 37 _______________________
-
+find()
 ___________________________ Answer ______________________________ */
-
+// let frutis = ['mango','grapes','guava','orange','mango','bnanaa','mango'];
+// let need = frutis.find((elements,indexs)=>{return elements === 'mango'})
+// console.log(need)
 /* ________________________ Question no 38 _______________________
-
+forEach()
 ___________________________ Answer ______________________________ */
-
+// let frutis = ['mango','grapes','guava','orange','mango','bnanaa','mango'];
+// frutis.forEach((Elements)=>{console.log(Elements
+// )})
 /* ________________________ Question no 39 _______________________
+.starWith();
 
 ___________________________ Answer ______________________________ */
-
+// let frutis = ['mango','grapes','guava','orange','mango','bnanaa','mango'];
+// let need = frutis.find((elements)=>{return elements.startsWith('g');})
+// console.log(need)
 /* ________________________ Question no 40 _______________________
-
+includes()
 ___________________________ Answer ______________________________ */
-
+// let frutis = ['mango','grapes','guava','orange','mango','bnanaa','mango'];
+// // let check = frutis.includes('grapes');
+// let check = frutis.indexOf('mangoj')
+// console.log(check)
 /* ________________________ Question no 41 _______________________
-
+ .at()
 ___________________________ Answer ______________________________ */
+// let frutis = ['mango','grapes','guava','orange','mango','bnanaa','mango'];
+// //   let check = frutis.at(5);
+// // let check = frutis[5];
 
+//   console.log(check)
 /* ________________________ Question no 42 _______________________
-
+filter()
 ___________________________ Answer ______________________________ */
-
+// const user = [
+//     {id : 1,
+//         name :'Aziz',
+//         designation : 'Doctor'
+//     },
+//     {id : 3,
+//         name :'Wqas',
+//         designation : 'Captain'
+//     },
+//     {id : 3,
+//         name :'Zulfiqar',
+//         designation : 'Professor'
+//     },
+//     {id : 4,
+//         name :'Muzamil',
+//         designation : 'ASP'
+//     }
+//     ,{id : 5,
+//         name :'Umair',
+//         designation : 'Professor'
+//     }
+// ]
+// let need = user.find(function(element){return element.designation === 'Professor'});
+// console.log(need)
 /* ________________________ Question no 43 _______________________
-
+closurFunction()
 ___________________________ Answer ______________________________ */
+// const  closureHandlet = ()=>{let outerValu = 'i am outer value';
+//      return ()=>{return outerValu}}
 
+
+// let result =  closureHandlet();
+// console.log(result());
+
+// const closurFunction = function(){let greet = 'Hello';
+//     return function (){return greet;}
+// }
+// let resultt = closurFunction();
+// console.log(resultt())
 /* ________________________ Question no 44 _______________________
-
+closure Function
 ___________________________ Answer ______________________________ */
-
+//  function calculation (){ let a = 4; 
+//     let b = 8;
+//     return function(){return restult = a + b;}
+//  }
+//  let need = calculation();
+//  console.log(need())
 /* ________________________ Question no 45 _______________________
-
+ recursion function
 ___________________________ Answer ______________________________ */
-
+//  const learningRecursion = (num) =>{console.log('num ',num);
+//      if(num != 1){learningRecursion(num-1)}
+//      else{console.log('Loop ended')}
+// }
+// learningRecursion(5)
+// const recursion = (num)=>{console.log('num',num);
+//     if(num != 1){recursion(num-1)}
+//     else{console.log('loop end')}
+// }
+// recursion(3)
 /* ________________________ Question no 46 _______________________
-
+recursion()
 ___________________________ Answer ______________________________ */
-
+// function countDown(number){if(number <=0){
+//     // base case when to stop:
+//     console.log('done');
+//     return;
+// }
+// // print the number
+// console.log(number);
+// // call recursive function
+// countDown(number - 1)}
+// // call out of scope funtion to pass parameter
+// countDown(5 )
 /* ________________________ Question no 47 _______________________
-
+closure function
 ___________________________ Answer ______________________________ */
-
+// let greet = function(name){
+//   return  function(){console.log(`hello ${name}`)}
+// }
+// let result = greet('Aziz');
+// result();
 /* ________________________ Question no 48 _______________________
-
+findIndex()
 ___________________________ Answer ______________________________ */
-
+// const user = [
+//     {id : 1,
+//         name : 'Aziz'
+//     },
+//      {id : 2,
+//         name : 'Pervaiz'
+//     },
+//      {id : 3,
+//         name : 'Umair'
+//     },
+//      {id : 4,
+//         name : 'Mohsin'
+//     }
+// ];
+// let targetIndex = user.findIndex(function(element){return element.id === 2});
+// user.splice(targetIndex,1);
+// console.log(user)
 /* ________________________ Question no 49 _______________________
-
+some( )
 ___________________________ Answer ______________________________ */
-
+// const user = [
+//     {id : 1,
+//         name : 'Aziz'
+//     },
+//      {id : 2,
+//         name : 'Pervaiz'
+//     },
+//      {id : 3,
+//         name : 'Umair'
+//     },
+//      {id : 4,
+//         name : 'Mohsin'
+//     }
+// ];
+// let target = user.some((Element)=>{return Element.name === 'Mohsiyn'});
+// console.log(target);
 /* ________________________ Question no 50 _______________________
-
+Advance javascript use of map( ) method:
 ___________________________ Answer ______________________________ */
+const user = [
+    {id : 1,
+        name : 'Aziz'
+    },
+     {id : 2,
+        name : 'Pervaiz'
+    },
+     {id : 3,
+        name : 'Umair'
+    },
+     {id : 4,
+        name : 'Mohsin'
+    }
+];
+
+let need = user.map((item)=>{return item.name + ' khan'});
+console.log(need)
